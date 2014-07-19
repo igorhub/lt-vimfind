@@ -1,0 +1,8 @@
+{:+ {:editor.keys.vim.normal {"/" [(:lt.plugins.lt-vimfind/search :forward)]
+                              "?" [(:lt.plugins.lt-vimfind/search :backward)]
+                              "n" [(:lt.plugins.lt-vimfind/find-next :forward)]
+                              "N" [(:lt.plugins.lt-vimfind/find-next :backward)]}
+
+     :lt.plugins.lt-vimfind/ctx {"enter" [:lt.plugins.lt-vimfind/fix-search]
+                                  "esc" [:lt.plugins.lt-vimfind/cancel-search]}}}
+

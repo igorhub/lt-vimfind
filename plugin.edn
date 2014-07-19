@@ -1,0 +1,7 @@
+{:name "lt_vimfind"
+ :version "dev"
+ :author "Igor Korobov"
+ :source ""
+ :desc "Makes 'find' command behave more like in vim."
+ :behaviors "lt_vimfind.behaviors"}
+
