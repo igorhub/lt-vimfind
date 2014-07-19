@@ -1,5 +1,3 @@
 {:+ {:app [(:lt.objs.plugins/load-js "lt_vimfind_compiled.js")
            (:lt.objs.plugins/load-css "css/vimfind.css")
-           (:lt.objs.plugins/load-keymap "lt_vimfind.keymap")]
-     :lt-vimfind.hello [:lt.plugins.lt-vimfind/on-close-destroy]}}
-
+           (:lt.objs.plugins/load-keymap "lt_vimfind.keymap")]}}
