@@ -1,9 +1,3 @@
-;; TBD:
-;; [*] scrolling
-;; [*] css
-;; [*] keymap
-;; [ ] WHY RELOADING BEHAVIORS???
-
 (ns lt.plugins.lt-vimfind
   (:require [lt.object :as object]
             [lt.util.dom :as dom]
@@ -30,16 +24,6 @@
     (js/CodeMirror.commands.find (editor/->cm-ed ed) text backward?)
     (js/CodeMirror.commands.clearSearch (editor/->cm-ed ed))
     (scroll ed pos (editor/->cursor ed))))
-
-(object/object* ::vimfind-obj
-                :behaviors #{::fix-search ::cancel-search ::search}
-                :start-pos nil
-                :backward? false
-                :previous-search {:text nil :backward? false}
-                :text nil
-                :bar nil)
-
-(def thing (object/create ::vimfind-obj))
 
 (behavior ::fix-search
           :triggers #{:fix-search}
@@ -84,6 +68,16 @@
                         (when start-pos
                           (editor/move-cursor ed start-pos))
                         (find-next text backward?))))
+
+(object/object* ::vimfind-obj
+                :behaviors #{::fix-search ::cancel-search ::search}
+                :start-pos nil
+                :backward? false
+                :previous-search {:text nil :backward? false}
+                :text nil
+                :bar nil)
+
+(def thing (object/create ::vimfind-obj))
 
 (defui input [this]
   [:input.vimfind-input {:type "text"}]
