@@ -1,5 +1,5 @@
 {:name "lt_vimfind"
- :version "dev"
+ :version "0.0.1"
  :author "Igor Korobov"
  :source "https://github.com/igorhub/lt-vimfind"
  :desc "Makes 'find' command behave like in vim."
