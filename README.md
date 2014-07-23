@@ -2,7 +2,8 @@ lt-vimfind
 ----------
 
 lt-vimfind is a Light Table plugin that make 'find' command
-behave like in vim.
+behave like in vim. The plugin is in its early stage, expect
+rough edges.
 
 ## Usage
 
@@ -17,10 +18,6 @@ default, they are bound to the keys you would expect (see
                           "N" [(:lt.plugins.lt-vimfind/find-next :backward)]}}
 ```
 
-## Contributing
+## Community
 
-In its current state, lt-vimfind suits all may searching needs
-(I have very few of them). However, if you find the plugin
-useful but lacking something important (or acting annoying in
-some way), you should definitely post an issue in the github's
-tracking system.
+Join the discussion at the [Light Table newsgroup](https://groups.google.com/forum/#!topic/light-table-discussion/j-QzgCQttG0).

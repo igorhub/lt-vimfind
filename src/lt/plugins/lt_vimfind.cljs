@@ -89,7 +89,7 @@
   :blur #(context/out! ::ctx))
 
 (object/object* ::vimfind-bar
-                :name "Ъ-search-bar"
+                :name "vimfind-bar"
                 :order -1
                 :height 30
                 :shown false
