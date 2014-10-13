@@ -4,7 +4,7 @@
             [lt.objs.editor :as editor]
             [lt.objs.editor.pool :as pool]
             [lt.objs.context :as context]
-            [lt.objs.statusbar :as statusbar]
+            [lt.objs.status-bar :as status-bar]
             [lt.objs.command :as cmd])
   (:require-macros [lt.macros :refer [defui behavior]]))
 
@@ -105,7 +105,7 @@
                                               :backward? backward?
                                               :text nil
                                               :bar bar})
-                        (statusbar/add-container bar)
+                        (status-bar/add-container bar)
                         (dom/focus (dom/$ :input (object/->content bar)))))})
 
 (cmd/command {:command ::find-next
